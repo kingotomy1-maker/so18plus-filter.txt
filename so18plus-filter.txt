@@ -1,26 +1,51 @@
-! Soul Ultra Filter – Block Ads & Allow Essential Media
+! Soul Total AdBlock – Block All Ads & Popups
 ! Created: 2025-07-19
 
+! 🛡️ حظر شبكات الإعلانات المعروفة
 ||adspyglass.com^
+||*.adspyglass.com^
 ||juicyads.com^
 ||exoclick.com^
 ||doubleclick.net^
 ||popads.net^
+||onclickads.net^
+||adskeeper.co.uk^
+||adnxs.com^
+||media.net^
+||revcontent.com^
+||taboola.com^
+||outbrain.com^
+||zergnet.com^
+||trafficjunky.net^
+||adservice.google.com^
 
+! ❌ حظر الكلمات الإعلانية العامة
 ||*ads*$third-party
+||*ad*$third-party
 ||*advertisement*$third-party
 ||*advertising*$third-party
-||*/banners/*$third-party
-*$popup,third-party
-
-! منع روابط إعلانات المواقع 18+
-||*porn*$third-party
-||*adult*$third-party
-||*xxx*$third-party
+||*/ads/*$third-party
 ||*/ad-delivery/*$third-party
+||*/sponsored/*$third-party
+||*/trackers/*$third-party
 ||*/clicktrack/*$third-party
 
-! السماح بالصور والفيديو الأساسي بدون تعطيل الصفحات
+! 🔥 حظر الإعلانات من مواقع 18+ أو المشبوهة
+||*porn*$third-party
+||*xxx*$third-party
+||*adult*$third-party
+||*/live/*$third-party
+||*/stream/*$third-party
+||*/cam/*$third-party
+
+! 🚫 حظر النوافذ المنبثقة والمزعجة
+*$popup,third-party
+||*popup*$popup
+||*popunder*$popup
+||*redirect*$popup
+||*/banner/*$popup
+
+! ✅ السماح بالصور والفيديو الأساسي
 @@||*.jpg$image
 @@||*.png$image
 @@||*.webp$image
