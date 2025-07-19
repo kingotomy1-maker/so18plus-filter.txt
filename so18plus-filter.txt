@@ -1,0 +1,28 @@
+! Soul Ultra Filter – Block Ads & Allow Essential Media
+! Created: 2025-07-19
+
+||adspyglass.com^
+||juicyads.com^
+||exoclick.com^
+||doubleclick.net^
+||popads.net^
+
+||*ads*$third-party
+||*advertisement*$third-party
+||*advertising*$third-party
+||*/banners/*$third-party
+*$popup,third-party
+
+! منع روابط إعلانات المواقع 18+
+||*porn*$third-party
+||*adult*$third-party
+||*xxx*$third-party
+||*/ad-delivery/*$third-party
+||*/clicktrack/*$third-party
+
+! السماح بالصور والفيديو الأساسي بدون تعطيل الصفحات
+@@||*.jpg$image
+@@||*.png$image
+@@||*.webp$image
+@@||*.mp4$media
+@@||*.webm$media
